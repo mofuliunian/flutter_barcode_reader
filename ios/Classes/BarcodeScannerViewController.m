@@ -42,7 +42,7 @@
                              views:@{@"scanRect": _scanRect}]];
   [_scanRect startAnimating];
     self.scanner = [[MTBBarcodeScanner alloc] initWithPreviewView:_previewView];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector('返回')];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
   [self updateFlashButton];
 }
 
